@@ -59,7 +59,7 @@
         <h1 class="hero-title">
           Ефективні рішення для<br>вашого бізнесу
         </h1>
-        <button class="hero-button" type="button">
+        <button data-modal-open class="hero-button" type="button">
           Замовити послугу
         </button>
       </section>
@@ -131,12 +131,40 @@
           Чим ми займаємося
         </h2>
         <ul class="container occupation-list">
-          <li><a href="link"><img src="./images/box-1.jpg" alt="Чим ми займаємося" width="370"></a></li>
-          <li><a href="link"><img src="./images/box-2.jpg" alt="Чим ми займаємося" width="370"></a></li>
-          <li><a href="link"><img src="./images/box-3.jpg" alt="Чим ми займаємося" width="370"></a></li>
+          <li>
+            <div class="occupation-card">
+              <a href="./portfolio.html"><img src="./images/box-1.jpg" alt="Чим ми займаємося" width="370">
+                <p class="occupation-text">
+                  Десктопні додатки
+                </p>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="occupation-card">
+              <a href="./portfolio.html"><img src="./images/box-2.jpg" alt="Чим ми займаємося" width="370">
+                <p class="occupation-text">
+                  Мобільні додатки
+                </p>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="occupation-card">
+              <a href="./portfolio.html"><img src="./images/box-3.jpg" alt="Чим ми займаємося" width="370">
+                <p class="occupation-text">
+                  Дизайнерські рішення
+                </p>
+              </a>
+            </div>
+          </li>
         </ul>
       </section>
+
       <!-- Team Section -->
+      
       <section class="section team-section">
         <h2 class="titles team-title">
           Наша команда
@@ -400,6 +428,24 @@
           </ul>
         </div>
       </div>
-  </footer>
+    </footer>
+
+    <!-- Modal Window -->
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close-button" type="button">
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis natus est iure quibusdam nulla atque eligendi et. Culpa beatae earum numquam voluptatem amet reprehenderit, placeat vel fugiat autem! Reiciendis, nesciunt.
+        </p>
+      </div>
+
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
